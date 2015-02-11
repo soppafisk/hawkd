@@ -11,9 +11,12 @@
 </head>
 <body <?php body_class(); ?>>
 <div id="wrapper" class="hfeed">
-<header id="header" role="banner">
-<nav id="menu" role="navigation">
-<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-</nav>
+<header id="header" role="banner" class="row">
+	<div class="col-xs-4"></div>
+	<div class="col-xs-8">
+		<nav id="menu" role="navigation">
+		<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+		</nav>
+	</div>
 </header>
 <div id="container">

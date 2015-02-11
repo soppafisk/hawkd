@@ -1,0 +1,22 @@
+article {
+	padding: 30px 0;
+	height: 100vh;
+}
+
+.article-body {
+	width: 80%;
+	margin: 0 auto;
+}
+
+ul#menu-main-nav {
+	font-size: 2rem;
+	
+}
+ul#menu-main-nav li {
+	float: left;
+	padding: 1em;
+}
+
+article#post-5 {
+	background: rgb(252, 219, 65);
+}

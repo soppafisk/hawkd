@@ -23,10 +23,13 @@ $the_query = new WP_Query($args);
 if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 	$the_query-> the_post();
 ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class();?>>
-<h1><?php print the_title(); ?></h1>
 
-<?php print the_content(); ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class();?>>
+	<div class="article-body">
+	<h1 class="text-center"><?php print the_title(); ?></h1>
+
+	<?php print the_content(); ?>
+	</div>
 </article>
 
 
