@@ -1,10 +1,14 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
 article {
 	padding: 30px 0;
 	min-height: 100vh;
 }
 
 .article-body {
-	width: 80%;
+	width: 60%;
 	margin: 0 auto;
 }
 
@@ -18,7 +22,12 @@ ul#menu-main-nav li {
 }
 
 article#post-5 {
+
 	background: rgb(252, 219, 65);
+}
+article#post-7 {
+	background: #8ED4CF;
+	/*background: #44ABA6; */
 }
 
 .img-box img {

@@ -26,7 +26,7 @@ if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 
 <article id="post-<?php the_ID(); ?>" <?php post_class();?>>
 	<div class="article-body">
-	<h1 class="text-center"><?php print the_title(); ?></h1>
+	<h1 class="text-center"><?php // print the_title(); ?></h1>
 	<?php
 
 	if (get_the_ID() == 5) :
