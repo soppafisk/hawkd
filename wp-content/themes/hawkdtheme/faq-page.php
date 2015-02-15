@@ -4,12 +4,11 @@
 */
 
 get_header(); ?>
-	<div class="row"> 
-		<div class="col-xs-12">
-			<h1>Frequently asked questions</h1>
-		</div>
-	</div>
+
 <section id="content" role="main" class="row">
+	<div class="col-xs-12">
+		<h1>Frequently asked questions</h1>
+	</div>
 
 <?php 
 
@@ -48,9 +47,9 @@ $the_query = new WP_Query($args);
 	if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 		$the_query-> the_post();
 	?> 
-	<article <?php post_class(); ?>>
-	<h1><?php the_title(); ?></h1>
-	<section class="entry-content" id="faq_<?php the_ID(); ?>">
+	<article <?php post_class(); ?> id="faq_<?php the_ID(); ?>">
+	<h1><span class="faq-arrow glyphicon glyphicon-chevron-right"></span><?php the_title(); ?></h1>
+	<section class="entry-content">
 	<?php the_content(); ?>
 	</section>
 </article>

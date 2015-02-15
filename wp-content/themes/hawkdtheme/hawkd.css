@@ -30,6 +30,11 @@ body.home article {
 	margin: 0 auto;
 }
 
+#content {
+	width: 60%;
+	margin: 0 auto;
+}
+
 ul#menu-main-nav {
 	font-size: 2rem;
 	
@@ -54,7 +59,17 @@ article#post-7 {
 
 /*********** FAQ *********************************/
 ul.faq-nav {
-	padding: 1rem;
+
+}
+
+body.page-template-faq-page article {
+	border: 1px solid grey;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.faq-arrow {
+	font-size: 0.6em;
 }
 
 /*********** RANDOM ******************************/
