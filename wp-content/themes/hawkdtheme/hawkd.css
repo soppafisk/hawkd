@@ -1,6 +1,19 @@
+/*
+hakwd colors:
+100% Yellow #f9d94e
+100% Blue #1d8fae
+100% Grey #58595b
+
+50% Yellow #fbe8a6
+50% Blue #8cbed1
+50% Grey #a7a9ac
+
+*/
+
 body {
 	font-family: 'Roboto', sans-serif;
 	overflow-y: scroll;
+	color: #58595b;
 }
 
 body.home article {
@@ -8,14 +21,26 @@ body.home article {
 	min-height: 100vh;
 }
 
+a, a:visited {
+	color: #58595b;
+}
+
+a:hover, a:active, a:focus {
+	color: #1d8fae;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	color: #1d8fae;
+}
+
 #header {
 	position: fixed;
 	top: 0;
 	padding-top: 10px;
 	width: 100vw;
-	height: 90px;
 	background: rgba(255, 255, 255, 0.8);
 	z-index: 10;
+	overflow: auto;
 }
 
 #container {
@@ -23,14 +48,7 @@ body.home article {
 	top: 90px;
 }
 
-
-
 .article-body {
-	width: 60%;
-	margin: 0 auto;
-}
-
-body.page #content {
 	width: 60%;
 	margin: 0 auto;
 }
@@ -46,10 +64,10 @@ ul#menu-main-nav li {
 
 article#post-5 {
 
-	background: rgb(252, 219, 65);
+	background: #f9d94e;
 }
 article#post-7 {
-	background: #8ED4CF;
+	background: #8cbed1;
 	/*background: #44ABA6; */
 }
 
@@ -61,11 +79,16 @@ article#post-7 {
 ul.faq-nav {
 
 }
+.faq-nav li {
+	margin-bottom: 1em;
+}
+
+.faq-nav a {
+	font-weight: 500;
+	font-size: 1.3em;
+}
 
 body.page-template-faq-page article {
-	border: 1px solid grey;
-	border-radius: 5px;
-	padding: 10px;
 }
 
 .faq-arrow {

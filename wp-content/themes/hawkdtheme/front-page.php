@@ -24,8 +24,8 @@ if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 	$the_query-> the_post();
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class();?>>
-	<div class="article-body">
+<article class="row" id="post-<?php the_ID(); ?>" <?php post_class();?>>
+	<div class="col-md-8 col-md-offset-2">
 	<h1 class="text-center"><?php // print the_title(); ?></h1>
 	<?php
 

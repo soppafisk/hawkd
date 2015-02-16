@@ -3,8 +3,8 @@ $(document).ready(function(){
 	// Toggle article content
 	$(".entry-content").hide();
 	$("article.faq").click(function() {
-		$(this).children(".entry-content").toggle(400);
-		var arrow = $(this).children("h1").children();
+		$(this).find(".entry-content").toggle(400);
+		var arrow = $(this).find("span");
 		arrow.toggleClass("glyphicon-chevron-right");
 		arrow.toggleClass("glyphicon-chevron-down");
 	})

@@ -6,8 +6,8 @@
 get_header(); ?>
 
 <section id="content" role="main" class="row">
-	<div class="col-xs-12">
-		<h1>Frequently asked questions</h1>
+	<div class="col-xs-12 col-md-8-offset-2">
+		<h1 class="text-center">Frequently asked questions</h1>
 	</div>
 
 <?php 
@@ -27,8 +27,9 @@ $args = array(
 );
 $the_query = new WP_Query($args);
 ?>
-<div class="col-md-3 col-xs-12">
-	<ul class="faq-nav">
+
+<div class="col-lg-2 col-lg-offset-2 visible-lg-block">
+	<ul class="faq-nav well">
 	<?php
 	//left navigation
 	if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
@@ -39,7 +40,7 @@ $the_query = new WP_Query($args);
 	<?php endwhile; endif; ?>
 	</ul>
 </div>
-<div class="col-md-9 col-xs-12">
+<div class="col-lg-6 col-lg-offset-0 col-xs-10 col-xs-offset-1">
 
 	<?php 
 	rewind_posts();
@@ -48,11 +49,19 @@ $the_query = new WP_Query($args);
 		$the_query-> the_post();
 	?> 
 	<article <?php post_class(); ?> id="faq_<?php the_ID(); ?>">
-	<h1><span class="faq-arrow glyphicon glyphicon-chevron-right"></span><?php the_title(); ?></h1>
-	<section class="entry-content">
-	<?php the_content(); ?>
-	</section>
-</article>
+		<div class="panel-group">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title"><span class="faq-arrow glyphicon glyphicon-chevron-right"></span><?php the_title(); ?></h4>
+				</div>
+				<section class="entry-content panel-body">
+					<?php the_content(); ?>
+				</section>
+			</div>
+
+		</div>
+
+	</article>
 
 	<?php endwhile; endif; ?>
 </div>
