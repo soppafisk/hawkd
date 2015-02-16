@@ -1,9 +1,11 @@
 $(document).ready(function(){
 
+	$("#container").css("top", $("#header").outerHeight() + "px");
+
 	// Toggle article content
 	$(".entry-content").hide();
-	$("article.faq").click(function() {
-		$(this).find(".entry-content").toggle(400);
+	$(".panel-heading").click(function() {
+		$(this).siblings(".entry-content").toggle(400);
 		var arrow = $(this).find("span");
 		arrow.toggleClass("glyphicon-chevron-right");
 		arrow.toggleClass("glyphicon-chevron-down");
@@ -14,4 +16,8 @@ $(document).ready(function(){
     	var postId = this.className.replace('faq_', '');
     	$(".post-" + postId + " .entry-content").toggle(400);
 	});
+});
+
+$(window).resize(function() {
+	$("#container").css("top", $("#header").outerHeight() + "px");
 });
