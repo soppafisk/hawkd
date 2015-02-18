@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+	// push down content
 	$("#container").css("top", $("#header").outerHeight() + "px");
 
 	// Toggle article content
@@ -18,6 +19,7 @@ $(document).ready(function(){
 	});
 });
 
+// push down content 
 $(window).resize(function() {
 	$("#container").css("top", $("#header").outerHeight() + "px");
 });

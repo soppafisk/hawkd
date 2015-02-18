@@ -5,7 +5,7 @@
 <section id="content" role="main">
 <?php
 $args = array(
-	'orderby' => 'ID',
+	'orderby' => 'menu_order',
 	'order' => 'ASC',
 	'hierarchical' => 1,
 	'exclude' => '',
