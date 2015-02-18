@@ -8,7 +8,7 @@
 
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/hawkd.css" />
 
-<link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,300,400' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_uri(); ?>" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/hawkd.css" />
@@ -21,13 +21,13 @@
 <header id="header" role="banner" class="row">
 	
 		<div class="col-md-3 col-md-offset-2 col-xs-10 col-xs-offset-1">
-			<a href="<?php print get_home_url(); ?>"><img src="<?php bloginfo('template_directory');?>/img/logo.png" /></a>
+			<a href="<?php print get_home_url(); ?>"><img src="<?php bloginfo('template_directory');?>/img/logo2.png" /></a>
 		</div>
 		<div class="col-md-5 col-xs-10 col-xs-offset-1">
 			<nav id="menu" role="navigation">
 			<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 			</nav>
 		</div>
-	
+
 </header>
 <div id="container">

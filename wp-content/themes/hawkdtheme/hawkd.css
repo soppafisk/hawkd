@@ -21,6 +21,166 @@ body.home article {
 	min-height: 90vh;
 }
 
+article#post-2 {
+	
+	background-image: url("img/headerPIC.jpg");
+	background-repeat: no-repeat;
+	
+}
+
+
+
+.karta {
+	margin-top:50px;
+}
+
+.formular {
+	margin-top:20px;
+}
+
+.aboutText {
+text-align: center;
+word-spacing: 2px;
+margin-top: 15px;
+font-weight: 300;
+padding-left:20px;
+padding-right:20px;
+margin-bottom: 150px;
+}
+
+.aboutName {
+text-align: center;
+margin-top: 15px;
+font-weight: 500;
+font-size: 20px;
+color:#fff;
+
+}
+
+.aboutWork {
+text-align: center;
+margin-top: -10px;
+font-weight: 300;
+
+
+}
+
+.iconTitel {
+text-align: center;
+margin-top: 20px;
+font-weight: 300;
+font-size: 20px;
+
+
+}
+
+.aboutImg {
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+
+
+.statmentTitel {
+	font-size: 40px;
+	text-align: center;
+	color:#fff;
+	font-weight: 500;
+	margin-top:200px;
+
+}
+
+.kontaktTitel {
+	font-size: 45px;
+	text-align: left;
+	color:#fff;
+	font-weight: 500;
+
+
+
+
+}
+
+.statmentTitel:hover {
+
+	color:#f9d94e;
+
+
+}
+
+.statmentText {
+font-size: 18px;
+text-align: center;
+font-weight: 300;
+word-spacing: 2px;
+
+
+}
+
+#hawkdTitel {
+	color:#fff;
+	text-align: center;
+	letter-spacing: 5px;
+	font-size: 45px;
+}
+
+.hawkdTitel2 {
+color:#fff;
+text-align: center;	
+letter-spacing: 2px;
+font-size: 12px;
+margin-bottom: 20px;
+}
+
+.aboutHawkd {
+text-align: center;	
+letter-spacing: 1px;
+font-size: 15px;
+font-weight: 300;
+margin-bottom: 100px;
+
+
+}
+
+article#post-2 p {
+	text-align: center;
+	color: #000;
+	font-size: 22px;
+	margin-top:200px;
+	font-weight: 300;
+
+}
+
+#FSContact2 {
+	margin-top:20px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.form-control {
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+
+
+input#fscf_submit2.btn.btn-default{
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-left:110px;
+
+}
+
+input#fscf_submit1.btn.btn-default {
+	float:right;
+	width:150px;
+
+}
+
 a, a:visited {
 	color: #58595b;
 }
@@ -42,12 +202,13 @@ h1,h2,h3,h4,h5,h6 {
 	background: rgba(255, 255, 255, 1);
 	z-index: 10;
 	overflow: auto;
-	border-bottom: 1px solid #58595b;
+
 }
 
 #container {
 	position: relative;
 	top: 90px;
+
 }
 
 .article-body {
@@ -56,7 +217,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 ul#menu-main-nav {
-	font-size: 2rem;
+	font-size: 18px;
+	font-weight: 300;
 	
 }
 ul#menu-main-nav li {
@@ -65,17 +227,40 @@ ul#menu-main-nav li {
 }
 
 article#post-5 {
-
-	background: #f9d94e;
-}
-article#post-7 {
 	background: #8cbed1;
+	padding-top:160px;
+
+}
+
+article#post-65 {
+	background: #f9d94e;
+	padding-top:220px;
+
+}
+
+#gmap_canvas img{max-width:none!important;background:none!important}
+
+article#post-7 {
+	background: #f9d94e;
 	/*background: #44ABA6; */
 }
 
-.img-box img {
-	max-width: 100%;
+article#post-93 {
+	background: #a7a9ac;
+	/*background: #44ABA6; */
 }
+
+article#post-101 {
+	background: #a7a9ac;
+	/*background: #44ABA6; */
+}
+
+.aboutImg {
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /*********** FAQ *********************************/
 ul.faq-nav {
