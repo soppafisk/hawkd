@@ -1,12 +1,12 @@
 /*
 hakwd colors:
-100% Yellow #f9d94e
-100% Blue #1d8fae
-100% Grey #58595b
+100% Yellow #fcdb41h
+100% Blue #575756
+100% Grey #3391b0
 
-50% Yellow #fbe8a6
-50% Blue #8cbed1
-50% Grey #a7a9ac
+50% Yellow #fdebac
+50% Blue #9fc5d7
+50% Grey #b1b2b2
 
 */
 
@@ -23,9 +23,10 @@ body.home article {
 
 article#post-2 {
 	
-	background-image: url("img/headerPIC.jpg");
+	background-image: url("img/headerPic6.jpg");
+	background-size: 100%;
 	background-repeat: no-repeat;
-	
+	background-attachment: fixed;	
 }
 
 
@@ -87,7 +88,7 @@ font-size: 20px;
 	text-align: center;
 	color:#fff;
 	font-weight: 500;
-	margin-top:200px;
+	margin-top: 25%;
 
 }
 
