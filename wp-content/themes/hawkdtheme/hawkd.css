@@ -1,8 +1,8 @@
 /*
 hakwd colors:
-100% Yellow #fcdb41h
-100% Blue #575756
-100% Grey #3391b0
+100% Yellow #fcdb41
+100% Blue #3391b0
+100% Grey #575756
 
 50% Yellow #fdebac
 50% Blue #9fc5d7
@@ -13,185 +13,48 @@ hakwd colors:
 body {
 	font-family: 'Roboto', sans-serif;
 	overflow-y: scroll;
-	color: #58595b;
+	overflow-x: hidden;
+	color: #575756;
 }
 
 body.home article {
-	padding: 30px 0;
 	min-height: 90vh;
 }
 
-article#post-2 {
-	
-	background-image: url("img/headerPic6.jpg");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;	
-}
-
-
-
-.karta {
-	margin-top:50px;
-}
-
-.formular {
-	margin-top:20px;
-}
-
-.aboutText {
-text-align: center;
-word-spacing: 2px;
-margin-top: 15px;
-font-weight: 300;
-padding-left:20px;
-padding-right:20px;
-margin-bottom: 150px;
-}
-
-.aboutName {
-text-align: center;
-margin-top: 15px;
-font-weight: 500;
-font-size: 20px;
-color:#fff;
-
-}
-
-.aboutWork {
-text-align: center;
-margin-top: -10px;
-font-weight: 300;
-
-
-}
-
-.iconTitel {
-text-align: center;
-margin-top: 20px;
-font-weight: 300;
-font-size: 20px;
-
-
-}
-
-.aboutImg {
-	margin-left: auto;
-	margin-right: auto;
-
-}
-
-
-
-.statmentTitel {
-	font-size: 40px;
-	text-align: center;
-	color:#fff;
-	font-weight: 500;
-	margin-top: 25%;
-
-}
-
-.kontaktTitel {
-	font-size: 45px;
-	text-align: left;
-	color:#fff;
-	font-weight: 500;
-
-
-
-
-}
-
-.statmentTitel:hover {
-
-	color:#f9d94e;
-
-
-}
-
-.statmentText {
-font-size: 18px;
-text-align: center;
-font-weight: 300;
-word-spacing: 2px;
-
-
-}
-
-#hawkdTitel {
-	color:#fff;
-	text-align: center;
-	letter-spacing: 5px;
-	font-size: 45px;
-}
-
-.hawkdTitel2 {
-color:#fff;
-text-align: center;	
-letter-spacing: 2px;
-font-size: 12px;
-margin-bottom: 20px;
-}
-
-.aboutHawkd {
-text-align: center;	
-letter-spacing: 1px;
-font-size: 15px;
-font-weight: 300;
-margin-bottom: 100px;
-
-
-}
-
-article#post-2 p {
-	text-align: center;
-	color: #000;
-	font-size: 22px;
-	margin-top:200px;
-	font-weight: 300;
-
-}
-
-#FSContact2 {
-	margin-top:20px;
-	margin-left: auto;
-	margin-right: auto;
-
-}
-
-.form-control {
-	margin-left: auto;
-	margin-right: auto;
-	
-}
-
-
-
-input#fscf_submit2.btn.btn-default{
-
-	margin-left: auto;
-	margin-right: auto;
-	margin-left:110px;
-
-}
-
-input#fscf_submit1.btn.btn-default {
+input.btn.btn-default {
 	float:right;
 	width:150px;
-
 }
 
 a, a:visited {
-	color: #58595b;
+	color: #575756;
 }
 
 a:hover, a:active, a:focus {
-	color: #1d8fae;
+	color: #9fc5d7;
 }
 
 h1,h2,h3,h4,h5,h6 {
-	color: #1d8fae;
+	color: #3391b0;
+}
+
+#container {
+	position: relative;
+	top: 90px;
+}
+
+
+
+
+/* Menu */
+ul#menu-main-nav {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+ul#menu-main-nav li {
+	float: left;
+	padding: 1em;
 }
 
 #header {
@@ -206,60 +69,155 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 
-#container {
-	position: relative;
-	top: 90px;
-
+/* Home page */
+article#post-2 {
+	background-image: url("img/headerPicbig.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;	
+	background-size: cover;
+	background-position: 100% -10%;
 }
 
-.article-body {
-	width: 60%;
-	margin: 0 auto;
-}
 
-ul#menu-main-nav {
-	font-size: 18px;
+article#post-2 p {
+	text-align: center;
+	color: #000;
+	font-size: 22px;
 	font-weight: 300;
-	
-}
-ul#menu-main-nav li {
-	float: left;
-	padding: 1em;
 }
 
-article#post-5 {
-	background: #8cbed1;
-	padding-top:160px;
-
+#wpcf7-f119-o1 {
+	margin-top: 20%;
+	width: 600px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
+#wpcf7-f119-o1 input[type='email'] {
+	margin-top: 33px;
+}
+
+/* Three icons page */
 article#post-65 {
-	background: #f9d94e;
+	background: #fcdb41;
 	padding-top:220px;
-
 }
 
-#gmap_canvas img{max-width:none!important;background:none!important}
-
-article#post-7 {
-	background: #f9d94e;
-	/*background: #44ABA6; */
+.iconTitel {
+	text-align: center;
+	margin-top: 20px;
+	font-weight: 300;
+	font-size: 20px;
 }
 
-article#post-93 {
-	background: #a7a9ac;
-	/*background: #44ABA6; */
+/* Statements page*/
+article#post-93, article#post-101 {
+	background: #b1b2b2;
 }
 
-article#post-101 {
-	background: #a7a9ac;
-	/*background: #44ABA6; */
+.statmentTitel {
+	font-size: 40px;
+	text-align: center;
+	color:#fff;
+	font-weight: 500;
+	margin-top: 25%;
+}
+
+.statmentTitel:hover {
+	color: #fcdb41;
+}
+
+.statmentText {
+	font-size: 18px;
+	text-align: center;
+	font-weight: 300;
+	word-spacing: 2px;
+}
+
+/* About */
+article#post-5 {
+	background: #9fc5d7;
+	padding-top:160px;
+}
+
+#hawkdTitel {
+	color:#fff;
+	text-align: center;
+	letter-spacing: 5px;
+	font-size: 45px;
+}
+
+.hawkdTitel2 {
+	color:#fff;
+	text-align: center;	
+	letter-spacing: 2px;
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+
+.aboutHawkd {
+	text-align: center;	
+	letter-spacing: 1px;
+	font-size: 15px;
+	font-weight: 300;
+	margin-bottom: 100px;
 }
 
 .aboutImg {
    display: block;
-    margin-left: auto;
-    margin-right: auto;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.aboutText {
+	text-align: center;
+	word-spacing: 2px;
+	margin-top: 15px;
+	font-weight: 300;
+	padding-left:20px;
+	padding-right:20px;
+	margin-bottom: 150px;
+}
+
+.aboutName {
+	text-align: center;
+	margin-top: 15px;
+	font-weight: 500;
+	font-size: 20px;
+	color:#fff;
+}
+
+.aboutWork {
+	text-align: center;
+	margin-top: -10px;
+	font-weight: 300;
+}
+
+/* Contact */
+article#post-7 {
+	background: #fcdb41;
+	padding-bottom: 100px;
+}
+
+.karta {
+	margin-top:50px;
+}
+
+#gmap_canvas img{
+	max-width:none !important;
+	background:none !important
+}
+
+.formular {
+	margin-top:20px;
+}
+
+.kontaktTitel {
+	font-size: 45px;
+	text-align: left;
+	color:#fff;
+	font-weight: 500;
 }
 
 

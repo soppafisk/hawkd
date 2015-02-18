@@ -30,7 +30,7 @@ if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 
 <?php if (get_the_ID() == 2) : ?>
 	<div class="row">
-		<div class="col-xs-12">
+		<div class="col-xs-10 col-xs-offset-1">
 		<?php print the_content(); ?>
 		</div>
 	</div>
