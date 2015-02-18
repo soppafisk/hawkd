@@ -27,17 +27,25 @@ if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 
 <article class="row" id="post-<?php the_ID(); ?>" <?php post_class();?>>
 	<div class="col-md-8 col-md-offset-2">
-	<h1 class="text-center"><?php // print the_title(); ?></h1>
-	<?php
 
+<?php if (get_the_ID() == 2) : ?>
+	<div class="row">
+		<div class="col-xs-12">
+		<?php print the_content(); ?>
+		</div>
+	</div>
+
+	<?php endif; ?>
+
+	<?php
+	// The page with 3 icons
 	if (get_the_ID() == 65) :
 		$image = wp_get_attachment_image_src(get_field('bild_1'), 'full'); ?>
 	<div class="row">
 		<div class="col-xs-4">	
 			<img class="aboutImg" src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('bild_1')) ?>" />
 			<p class="iconTitel"><?php print get_field('titel_1'); ?></p>
-			<p class="aboutText"><?php print get_field('icontext_1'); ?> </p>
-			
+			<p class="aboutText"><?php print get_field('icontext_1'); ?> </p>		
 		</div>
 
 		<?php $image = wp_get_attachment_image_src(get_field('bild_2'), 'full'); ?>
@@ -45,9 +53,7 @@ if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 			<img class="aboutImg" src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('bild_2')) ?>" />
 			<p class="iconTitel"><?php print get_field('titel_2'); ?></p>
 			<p class="aboutText"><?php print get_field('icontext_2'); ?> </p>
-			
 		</div>
-		
 		
 		<?php $image = wp_get_attachment_image_src(get_field('bild_3'), 'full'); ?>
 		<div class="col-xs-4">
@@ -61,6 +67,7 @@ if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 	<?php endif; ?>
 
 <?php
+	// grey with short statement
 	if (get_the_ID() == 93) :
 		$image = wp_get_attachment_image_src(get_field('bild_1'), 'full'); ?>
 	<div class="row">
@@ -79,6 +86,7 @@ if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 
 
 <?php
+	// About page
 	if (get_the_ID() == 5) :
 		$image = wp_get_attachment_image_src(get_field('image_1'), 'full'); ?>
 	<div class="row">
@@ -92,8 +100,6 @@ if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 		<div class="col-xs-12">	
 		<p class="aboutHawkd"><?php print get_field('about'); ?></p>
 		</div>
-
-
 			<div class="col-xs-4">	
 			<img class="aboutImg" src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('image_1')) ?>" />
 			<p class="aboutName"><?php print get_field('namn_1'); ?></p>
@@ -109,7 +115,6 @@ if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 			<p class="aboutText"><?php print get_field('text_2'); ?> </p>
 		</div>
 		
-		
 		<?php $image = wp_get_attachment_image_src(get_field('image_3'), 'full'); ?>
 		<div class="col-xs-4">
 			<img class="aboutImg" src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('image_3')) ?>" />
@@ -120,7 +125,8 @@ if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 	</div>
 	<?php endif; ?>
 
-	<?php
+<?php
+	// grey with short statement 2
 	if (get_the_ID() == 101) :
 		$image = wp_get_attachment_image_src(get_field('bild_1'), 'full'); ?>
 	<div class="row">
@@ -137,7 +143,8 @@ if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 
 	<?php endif; ?>
 
-		<?php
+<?php
+	// contact page
 	if (get_the_ID() == 7) : $image = wp_get_attachment_image_src(get_field(''), 'full'); ?>
 	<div class="row">
 		<div class="col-xs-12">	
@@ -161,13 +168,7 @@ if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 	<?php endif; ?>
 
 
-	<?php
-	if (get_the_ID() == 2) : $image = wp_get_attachment_image_src(get_field(''), 'full'); ?>
-	<div class="row">
-		<?php print the_content(); ?>
-	</div>
 
-	<?php endif; ?>
 
 	
 	
@@ -175,7 +176,7 @@ if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 
 
 
-<?php endwhile; endif;  
+<?php endwhile; endif;  // end the loop
 
 wp_reset_postdata();
 

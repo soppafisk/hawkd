@@ -285,6 +285,10 @@ ul.faq-nav {
 	font-size: 0.6em;
 }
 
+.panel-heading {
+	cursor: pointer;
+}
+
 /*********** RANDOM ******************************/
 .hidden {
 	display: hidden;
