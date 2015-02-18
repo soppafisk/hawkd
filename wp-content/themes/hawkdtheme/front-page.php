@@ -138,7 +138,7 @@ if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 	<?php endif; ?>
 
 		<?php
-	if (get_the_ID() == 7) : $image = wp_get_attachment_image_src(get_field('bild_1'), 'full'); ?>
+	if (get_the_ID() == 7) : $image = wp_get_attachment_image_src(get_field(''), 'full'); ?>
 	<div class="row">
 		<div class="col-xs-12">	
 			<p class="kontaktTitel">Contact us</p>
@@ -162,7 +162,7 @@ if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 
 
 	<?php
-	if (get_the_ID() == 2) : $image = wp_get_attachment_image_src(get_field('bild_1'), 'full'); ?>
+	if (get_the_ID() == 2) : $image = wp_get_attachment_image_src(get_field(''), 'full'); ?>
 	<div class="row">
 		<?php print the_content(); ?>
 	</div>
