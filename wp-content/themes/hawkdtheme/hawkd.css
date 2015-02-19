@@ -18,7 +18,8 @@ body {
 }
 
 body.home article {
-	min-height: 90vh;
+	min-height: 95vh;
+	padding: 100px 0 100px 0;
 }
 
 #container {
@@ -57,16 +58,29 @@ h1,h2,h3,h4,h5,h6 {
 	#hamburgerTitle {
 		display: none;
 	}
+	#hamburgerDiv span {
+		float: right;
+		position: fixed;
+		top: 25px;
+		right: 60px;
+	}
+	.expanded {
+		margin-top: 60px;
+	}
 }
 
 .expanded {
 	display: block !important;
+	z-index: 20;
+	float: left;
 }
 
 .expanded li {
 	clear: both;
 	float: left;
 	font-weight: 400;
+	border-top: 1px solid #575756;
+	width: 100%;
 }
 
 ul#menu-main-nav {
@@ -124,7 +138,6 @@ article#post-2 p {
 /* Three icons page */
 article#post-65 {
 	background: #fcdb41;
-	padding-top:220px;
 }
 
 .iconTitel {
@@ -161,7 +174,6 @@ article#post-93, article#post-101 {
 /* About */
 article#post-5 {
 	background: #9fc5d7;
-	padding-top:100px;
 }
 
 #hawkdTitel {
@@ -200,7 +212,6 @@ article#post-5 {
 	font-weight: 300;
 	padding-left:20px;
 	padding-right:20px;
-	margin-bottom: 150px;
 }
 
 .aboutName {
@@ -220,8 +231,6 @@ article#post-5 {
 /* Contact */
 article#post-7 {
 	background: #fcdb41;
-	padding-top: 50px;
-	padding-bottom: 100px;
 }
 
 .karta {
@@ -247,7 +256,7 @@ article#post-7 {
 }
 
 
-/*********** FAQ *********************************/
+/*********** FAQ + API *********************************/
 ul.faq-nav {
 	
 }
@@ -276,4 +285,11 @@ ul.faq-nav {
 /*********** RANDOM ******************************/
 .hidden {
 	display: hidden;
+}
+
+/* Responsive fixes */
+@media (max-width: 991px) {
+	.aboutText {
+		margin-bottom: 50px;
+	}
 }

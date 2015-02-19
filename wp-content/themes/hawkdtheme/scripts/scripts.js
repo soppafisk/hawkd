@@ -1,10 +1,11 @@
 $(document).ready(function(){
 
 	// hamburger menu
-	if ($(window).width() < 730) {
+	var windowWidth = $(window).width();
+	if (windowWidth < 730) {
 		miniMenu();
 	}
-	if ($(window).width() > 730) {
+	if (windowWidth > 730) {
 		bigMenu();
 	}
 
@@ -24,20 +25,46 @@ $(document).ready(function(){
 	$(".panel-heading").click(function() {
 		$(".entry-content").hide(400);
 		$(this).siblings(".entry-content").show(400);
-		var arrow = $(this).find("span");
-		arrow.toggleClass("glyphicon-chevron-right");
-		arrow.toggleClass("glyphicon-chevron-down");
+		var arrow = $(this).find(".glyphicon");
+		$(".glyphicon").removeClass("glyphicon-chevron-down");
+    	$(".glyphicon").addClass("glyphicon-chevron-right");
+    	arrow.removeClass("glyphicon-chevron-right");
+		arrow.addClass("glyphicon-chevron-down");
 	})
 
 	$(".faq-nav a").click(function(event){
     	event.preventDefault();
     	$(".entry-content").hide(400);
+    	$(".glyphicon").removeClass("glyphicon-chevron-down");
+    	$(".glyphicon").addClass("glyphicon-chevron-right");
+
     	var postId = this.className.replace('faq_', '.post-');
     	var arrow = $(postId).find("span");
-		arrow.toggleClass("glyphicon-chevron-right");
-		arrow.toggleClass("glyphicon-chevron-down");
+    	arrow.removeClass("glyphicon-chevron-right");
+		arrow.addClass("glyphicon-chevron-down");
     	$(postId + " .entry-content").show(400);
 	});
+
+	// soft scroll
+	var hash = window.location.hash;
+	var search = window.location.search;
+	if ( (hash.indexOf("#") >= 0 || hash == "") && search == "" ) {
+		$('a[href*=#]').on('click', function(event){   
+			event.preventDefault();
+			if (this.hash == "") {
+			    $('html,body').animate({
+			    	scrollTop: 0
+			    }, 500);
+			} else {
+				console.log(this.hash);
+			    $('html,body').animate({
+			    	scrollTop:$(this.hash).offset().top
+			    }, 500);
+			}
+		});
+	}
+
+
 }); // document ready
 
 // push down content 

@@ -177,6 +177,6 @@ if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 
 <?php endwhile; endif;  // end the loop
 
-wp_reset_postdata();
+wp_reset_postdata(); 
 
 get_footer(); ?>
