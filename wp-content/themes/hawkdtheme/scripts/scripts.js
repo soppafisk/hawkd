@@ -58,7 +58,7 @@ $(document).ready(function(){
 			} else {
 				console.log(this.hash);
 			    $('html,body').animate({
-			    	scrollTop:$(this.hash).offset().top
+			    	scrollTop:$(this.hash).offset().top-($("#header").outerHeight())
 			    }, 500);
 			}
 		});
