@@ -1,9 +1,23 @@
 $(document).ready(function(){
 
+	// hamburger menu
+	if ($(window).width() < 730) {
+		miniMenu();
+	}
+	if ($(window).width() > 730) {
+		bigMenu();
+	}
+
+	$("#hamburgerDiv").click(function() {
+		$(".menu-main-nav-container").toggleClass("expanded");
+	});
+
+	$(".menu-main-nav-container a").click(function() {
+		$(".menu-main-nav-container").removeClass("expanded");
+	});
+
 	// push down content
 	$("#container").css("top", $("#header").outerHeight() + "px");
-
-
 
 	// Toggle article content
 	$(".entry-content").hide();
@@ -24,9 +38,28 @@ $(document).ready(function(){
 		arrow.toggleClass("glyphicon-chevron-down");
     	$(postId + " .entry-content").show(400);
 	});
-});
+}); // document ready
 
 // push down content 
 $(window).resize(function() {
 	$("#container").css("top", $("#header").outerHeight() + "px");
+
+	if ($(window).width() < 730) {
+		miniMenu();
+	}
+
+	if ($(window).width() > 730) {
+		bigMenu();
+	}
 });
+
+
+function miniMenu() {
+	$("#hamburgerDiv").show();
+	$(".menu-main-nav-container").hide();
+}
+
+function bigMenu() {
+	$("#hamburgerDiv").hide();
+	$(".menu-main-nav-container").show();
+}

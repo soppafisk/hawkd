@@ -42,21 +42,21 @@ if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 	if (get_the_ID() == 65) :
 		$image = wp_get_attachment_image_src(get_field('bild_1'), 'full'); ?>
 	<div class="row">
-		<div class="col-xs-4">	
+		<div class="col-md-4">	
 			<img class="aboutImg" src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('bild_1')) ?>" />
 			<p class="iconTitel"><?php print get_field('titel_1'); ?></p>
 			<p class="aboutText"><?php print get_field('icontext_1'); ?> </p>		
 		</div>
 
 		<?php $image = wp_get_attachment_image_src(get_field('bild_2'), 'full'); ?>
-		<div class="col-xs-4">
+		<div class="col-md-4">
 			<img class="aboutImg" src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('bild_2')) ?>" />
 			<p class="iconTitel"><?php print get_field('titel_2'); ?></p>
 			<p class="aboutText"><?php print get_field('icontext_2'); ?> </p>
 		</div>
 		
 		<?php $image = wp_get_attachment_image_src(get_field('bild_3'), 'full'); ?>
-		<div class="col-xs-4">
+		<div class="col-md-4">
 			<img class="aboutImg" src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('bild_3')) ?>" />
 			<p class="iconTitel"><?php print get_field('titel_3'); ?></p>
 			<p class="aboutText"><?php print get_field('icontext_3'); ?> </p>
@@ -70,37 +70,37 @@ if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 	// grey with short statement
 	if (get_the_ID() == 93) :
 		$image = wp_get_attachment_image_src(get_field('bild_1'), 'full'); ?>
-	<div class="row">
-		<div class="col-xs-12">	
-			<p class="statmentTitel"><?php print get_field('statement_1'); ?></p>
-		</div>
+		<div class="row">
+			<div class="col-xs-10 col-xs-offset-1">	
+				<p class="statmentTitel"><?php print get_field('statement_1'); ?></p>
+			</div>
 
-		<?php $image = wp_get_attachment_image_src(get_field('bild_2'), 'full'); ?>
-		<div class="col-xs-12">
-			<p class="statmentText"><?php print get_field('statement_2'); ?></p>
+			<?php $image = wp_get_attachment_image_src(get_field('bild_2'), 'full'); ?>
+			<div class="col-xs-10 col-xs-offset-1">
+				<p class="statmentText"><?php print get_field('statement_2'); ?></p>
+			</div>
 		</div>
-		
-	</div>
-
 	<?php endif; ?>
 
 
 <?php
 	// About page
-	if (get_the_ID() == 5) :
-		$image = wp_get_attachment_image_src(get_field('image_1'), 'full'); ?>
+	if (get_the_ID() == 5) : ?>
+		
 	<div class="row">
-		<div class="col-xs-12">
+		<div class="col-xs-10 col-xs-offset-1">
 		<h2 id="hawkdTitel">HAWKD</h2>
 		</div>
-		<div class="col-xs-12">	
+		<div class="col-xs-10 col-xs-offset-1">	
 		<p class="hawkdTitel2"><?php print get_field('abouttitel'); ?></p>
 		</div>	
 
-		<div class="col-xs-12">	
+		<div class="col-xs-10 col-xs-offset-1">	
 		<p class="aboutHawkd"><?php print get_field('about'); ?></p>
 		</div>
-			<div class="col-xs-4">	
+		
+		<?php $image = wp_get_attachment_image_src(get_field('image_1'), 'full'); ?>
+		<div class="col-md-4">	
 			<img class="aboutImg" src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('image_1')) ?>" />
 			<p class="aboutName"><?php print get_field('namn_1'); ?></p>
 			<p class="aboutWork"><?php print get_field('yrke_1'); ?></p>
@@ -108,7 +108,7 @@ if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 		</div>
 
 		<?php $image = wp_get_attachment_image_src(get_field('image_2'), 'full'); ?>
-		<div class="col-xs-4">
+		<div class="col-md-4">
 			<img class="aboutImg" src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('image_2')) ?>" />
 			<p class="aboutName"><?php print get_field('namn_2'); ?></p>
 			<p class="aboutWork"><?php print get_field('yrke_2'); ?></p>
@@ -116,7 +116,7 @@ if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 		</div>
 		
 		<?php $image = wp_get_attachment_image_src(get_field('image_3'), 'full'); ?>
-		<div class="col-xs-4">
+		<div class="col-md-4">
 			<img class="aboutImg" src="<?php echo $image[0]; ?>" alt="<?php echo get_the_title(get_field('image_3')) ?>" />
 			<p class="aboutName"><?php print get_field('namn_3'); ?></p>
 			<p class="aboutWork"><?php print get_field('yrke_3'); ?></p>
@@ -130,12 +130,12 @@ if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 	if (get_the_ID() == 101) :
 		$image = wp_get_attachment_image_src(get_field('bild_1'), 'full'); ?>
 	<div class="row">
-		<div class="col-xs-12">	
+		<div class="col-xs-10 col-xs-offset-1">	
 			<p class="statmentTitel"><?php print get_field('statment2_1'); ?></p>
 		</div>
 
 		<?php $image = wp_get_attachment_image_src(get_field('bild_2'), 'full'); ?>
-		<div class="col-xs-12 ">
+		<div class="col-xs-10 col-xs-offset-1">
 			<p class="statmentText"><?php print get_field('statment2_2'); ?></p>
 		</div>
 	
@@ -147,19 +147,18 @@ if ( $the_query -> have_posts() ) : while ( $the_query -> have_posts() ) :
 	// contact page
 	if (get_the_ID() == 7) : $image = wp_get_attachment_image_src(get_field(''), 'full'); ?>
 	<div class="row">
-		<div class="col-xs-12">	
+		<div class="col-xs-10 col-xs-offset-1 col-md-12 col-md-offset-0">	
 			<p class="kontaktTitel">Contact us</p>
 		</div>
 
-		<div class="col-xs-6 formular">	
+		<div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0 formular">	
 			<?php print the_content(); ?>
 		</div>	
-		<div class="col-xs-6 karta">	
+		
+		<div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0 karta">	
 		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-			<div style="overflow:hidden;height:300px;width:500px;">
-					<div id="gmap_canvas" style="height:300px;width:500px;"></div>
-					<a class="google-map-code" href="http://wordpress-themes.org" id="get-map-data">http://wordpress-themes.org</a>
-					</div>
+			<div style="overflow:hidden;height:300px;width:100%;">
+					<div id="gmap_canvas" style="height:300px;width:100%;"></div>
 				<script type="text/javascript"> function init_map(){var myOptions = {zoom:17,center:new google.maps.LatLng(57.693008,11.975303800000006),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(57.693008, 11.975303800000006)});infowindow = new google.maps.InfoWindow({content:"<b>Hawkd</b><br/>Vera Sandbergs All&eacute; 8<br/>411 33 Sverige" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
 			</div>
 		</div>

@@ -21,6 +21,11 @@ body.home article {
 	min-height: 90vh;
 }
 
+#container {
+	position: relative;
+	top: 90px;
+}
+
 input.btn.btn-default {
 	float:right;
 	width:150px;
@@ -38,15 +43,32 @@ h1,h2,h3,h4,h5,h6 {
 	color: #3391b0;
 }
 
-#container {
-	position: relative;
-	top: 90px;
+/* Menu */
+#menu {
+	float: right;
 }
 
+#hamburgerDiv {
+	font-size: 2em;
+	cursor: pointer;
+}
 
+@media (max-width: 440px) {
+	#hamburgerTitle {
+		display: none;
+	}
+}
 
+.expanded {
+	display: block !important;
+}
 
-/* Menu */
+.expanded li {
+	clear: both;
+	float: left;
+	font-weight: 400;
+}
+
 ul#menu-main-nav {
 	font-size: 18px;
 	font-weight: 300;
@@ -61,8 +83,9 @@ ul#menu-main-nav li {
 	position: fixed;
 	top: 0;
 	left: 15px;
-	padding-top: 10px;
+	padding-top: 20px;
 	width: 100%;
+	min-height: 90px;
 	background: rgba(255, 255, 255, 1);
 	z-index: 10;
 	overflow: auto;
@@ -138,7 +161,7 @@ article#post-93, article#post-101 {
 /* About */
 article#post-5 {
 	background: #9fc5d7;
-	padding-top:160px;
+	padding-top:100px;
 }
 
 #hawkdTitel {
@@ -197,15 +220,18 @@ article#post-5 {
 /* Contact */
 article#post-7 {
 	background: #fcdb41;
+	padding-top: 50px;
 	padding-bottom: 100px;
 }
 
 .karta {
 	margin-top:50px;
 }
+#gmap_canvas {
+	max-width: 100%;
+}
 
 #gmap_canvas img{
-	max-width:none !important;
 	background:none !important
 }
 

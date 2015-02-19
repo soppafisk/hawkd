@@ -19,12 +19,15 @@
 <body <?php body_class(); ?>>
 <div id="wrapper" class="hfeed">
 <header id="header" role="banner" class="row">
-	
-		<div class="col-md-3 col-md-offset-2 col-xs-10 col-xs-offset-1">
+
+		<div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
 			<a href="<?php print get_home_url(); ?>"><img src="<?php bloginfo('template_directory');?>/img/logo2.png" /></a>
-		</div>
-		<div class="col-md-5 col-xs-10 col-xs-offset-1">
+
 			<nav id="menu" role="navigation">
+				<div id="hamburgerDiv" style="display: none;">
+					<span class="glyphicon glyphicon-menu-hamburger" id="hamburger"></span>
+					<span id="hamburgerTitle">Menu</span>
+				</div>
 			<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 			</nav>
 		</div>
